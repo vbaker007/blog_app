@@ -10,6 +10,35 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require normalize-rails
  *= require_tree .
  *= require_self
  */
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+#main_navigation {
+  padding: 2.5em 5%;
+  .name {
+          font-weight: 700;
+          font-size: .7em;
+          text-transform: uppercase;
+          border: 2px solid $border;
+          padding: 0.75em 1rem;
+          text-decoration: none;
+          color: $dark;
+          float: left;
+  }
+  nav {
+          float: right;
+          a {
+            color: $dark;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+          }
+  }
+}
