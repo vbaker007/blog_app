@@ -34,16 +34,18 @@ $border:#E9E9E9;
   border-bottom: 1px solid $border;
   .name {
           font-weight: 700;
-          font-size: .7em;
+          font-size: .8em;
+          letter-spacing: 4px;
           text-transform: uppercase;
           border: 2px solid $border;
-          padding: 0.75em 1rem;
+          padding: 1rem;
           text-decoration: none;
           color: $dark;
           float: left;
   }
   nav {
           float: right;
+          padding: 1.5rem;
           a {
             color: $dark;
             text-decoration: none;
