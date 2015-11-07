@@ -26,5 +26,32 @@ class PostsController < ApplicationController
         format.json {render json: @post.errors, status: :unprocessable_entity}
       end
     end
+  end
+
+    def edit
+    end
+
+    def update 
+      if @post.update(post_params)
+        redirect_to @post
+      else
+        render 'edit' 
+      end
+    end
+
+    def destroy
+      @post.destroy
+      redirect_to chapters_path
+    end
+
+  private
+
+    def find_post
+      @post = Post.find(params[:id])
+    end
+
+    def chapter_params
+      params.require(:post).permit(:title, :content, :user_id)
+    end
 
 end
