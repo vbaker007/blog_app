@@ -17,6 +17,7 @@
       <h3><%= post.author %></h3>
       <p><%= post.body %></p>
       <%= link_to 'Show post', post_path(post) %>
+      <p><%= link_to 'New Post', new_post_path %></p>
     <% end %>
   </body>
 </html>
