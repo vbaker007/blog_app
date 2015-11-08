@@ -1,3 +1,46 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$dark:#424652;
+$light:#9a9da4;
+$highlight:#8bc6db;
+$border:#E9E9E9;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#main_navigation {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid $border;
+  .name {
+          font-weight: 700;
+          font-size: .8em;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          border: 2px solid $border;
+          padding: 1rem;
+          text-decoration: none;
+          color: $dark;
+          float: left;
+  }
+  nav {
+          float: right;
+          padding: 1.5rem;
+          a {
+            color: $dark;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+          }
+  }
+}
