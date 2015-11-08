@@ -3,6 +3,51 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+$dark:#424652;
+$light:#9a9da4;
+$highlight:#8bc6db;
+$border:#E9E9E9;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#main_navigation {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid $border;
+  .name {
+          font-weight: 700;
+          font-size: .8em;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          border: 2px solid $border;
+          padding: 1rem;
+          text-decoration: none;
+          color: $dark;
+          float: left;
+  }
+  nav {
+          float: right;
+          padding: 1.5rem;
+          a {
+            color: $dark;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+          }
+  }
+}
+
+ 
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -2365,10 +2410,7 @@ span.badge {
   span.badge.new:after {
     content: " new"; }
 
-nav ul a span.badge {
-  position: static;
-  margin-left: 4px;
-  line-height: 0; }
+
 
 .video-container {
   position: relative;
